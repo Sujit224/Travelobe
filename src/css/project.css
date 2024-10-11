@@ -1,9 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .features-section {
     width: 90%;
@@ -11,7 +6,7 @@ body {
     padding: 50px 0;
 }
 
-h2 {
+.features-section h2 {
     text-align: center;
     color: #333;
     margin-bottom: 40px;
@@ -28,6 +23,7 @@ h2 {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 .left:hover {
     transform: scale(1.05); 
@@ -53,6 +49,7 @@ h2 {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .right:hover {

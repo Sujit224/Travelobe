@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+body .header{
+    width: 100%;
+    padding: 17px 24px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body .header .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body .header .nav-links .nav-link{
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+body .header .nav-links .nav-link:hover{
+    color: #32AD85;
+}
+
+body .header .nav-links .nav-login{
+    padding: 8px 32px;
+    border-radius: 50px;
+    background-color: #4ECCA3;
+    color: white;
+    text-decoration: none;
+
+}
+
+body #sm_links {
+    display: none;
+}
+
+body .hero {
+    background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-trees-of-yellow-leaves-free-image.jpeg?w=1920&quality=50);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s linear;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    padding-bottom: 70px;
+}
+
+body .hero .hero-content {
+    width: 100%;
+    padding-left: 30px;
+}
+
+body .hero .hero-content .white{
+    color: white;
+    font-family: Satisfy,cursive;
+    font-size: 50px;
+    position: relative;
+    left: 20px;
+    line-height: 0.1;
+}
+body .hero .hero-content .blue{
+    color: #4ECCA3;
+    font-family: Jost,sans-serif;
+    font-size: 70px;
+}
+body .hero .hero-content .des{
+    color: white;
+    max-width: 550px;
+}
+body .hero .hero-content #find_more{
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-family: jost;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body .hero .hero-content #find_more:hover {
+    background-color: #4ECCA3;
+}
+
+body .hero #scrolling{
+/*    position: absolute;*/
+    display: flex;
+    flex-direction: column;
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+}
+
+body .hero #scrolling .scrolling-images {
+    width: 240px;
+    height: 135px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(0.8);
+    border: 8px solid white;
+    transition: all 0.5s ease;
+    border-radius: 16px;
+}
+
+body .hero #scrolling .scrolling-images:hover {
+    transform: scale(0.9);
+    border: 4px solid white;
+}
+
+body .hero .svg-divider{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../assets/SvgDivider.svg");
+    filter: invert(1);
+}
