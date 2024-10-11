@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 *{
-    margin: 0%;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -139,3 +139,101 @@ body .hero .svg-divider{
     background-image: url("../assets/SvgDivider.svg");
     filter: invert(1);
 }
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.footer-links {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1.2em;
+    padding: 0.5em 0.7em;
+    background: red;
+    border-radius: 50px;
+    width: 2.4em;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+
+.footer-links:hover {
+    width: 8em;
+}
+
+.footer-link-container, footer-text-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5em;
+    /* justify-content: center; */
+}
+
+.footer-text-container {
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em 0;
+}
+.team-section {
+    text-align: center;
+    padding: 30px 0;
+    background-color:black;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 170px;
+}
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.2);
+}
+
+.team-member h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 16px;
+}
+#company-info{
+    margin:12px;
+}
+
