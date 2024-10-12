@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/project.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/grid.css">
+    <link rel="stylesheet" href="src/css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -50,11 +51,12 @@
         <div class="svg-divider"></div>
     </section>
     <section>
-        <form action="">
-            <div id="tdetails">
-                <img src="" alt="departure">
+        <form action="" id="form">
+            <div id="tdetails" class="inline">
+                <div class="from my margin">
+                <img src="https://crazyflightsdeals.com/wp-content/uploads/2024/05/Flight-Booking-2-e1715246458325-600x380.png" alt="departure" width="38px" id="takeOff">
                 <label for="from">From:</label>
-                <input list="from" name="from" id="from1">
+                <input list="from" name="from" id="from1" class="color" required>
                 <datalist id="from">
                     <option value="Hyderabad">
                     <option value="Lucknow">
@@ -62,9 +64,11 @@
                     <option value="Gujarat">
                     <option value="Haryana">
                 </datalist>
-                <img src="" alt="arrival">
+                </div>
+                <div class="to my margin">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-aircraft-landing-icon-download-in-svg-png-gif-file-formats--airplane-airport-flight-phase-travel-pack-holidays-icons-1609622.png" width="32px" alt="arrival" id="down">
                 <label for="to">To:</label>
-                <input list="to" name="to" id="to1">
+                <input list="to" name="to" id="to1" class="color" required>
                 <datalist id="to">
                     <option value="Hyderabad">
                     <option value="Lucknow">
@@ -72,12 +76,15 @@
                     <option value="Gujarat">
                     <option value="Haryana">
                 </datalist>
-                <img src="" alt="date_icon">
-                <label for="date">Date</label>
-                <input type="datetime-local" id="date" name="date">
+                </div>
+                <div class="date my margin">
+                    <img src="https://www.shutterstock.com/image-vector/spiral-calendar-vector-icon-style-260nw-344152304.jpg" width="20px" alt="date_icon" id="dateI">
+                <label for="date"> Date</label>
+                <input type="datetime-local" id="date" name="date" class="color">
+                </div>
             </div>
-            <div id="search">
-                <input type="submit" value="SEARCH">
+            <div id="search" class="inline">
+                <input type="submit" value="SEARCH" class="search">
             </div>  
         </form>
     </section>

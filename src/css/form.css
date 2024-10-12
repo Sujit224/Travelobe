@@ -1,0 +1,57 @@
+#home{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-style: inherit;
+    position: relative;
+    left:40%;
+}
+.color {
+    font-size: 14px;
+    height: 28px ;
+    width: 190px ;
+    background-color: rgb(201, 239, 235);
+    border: 0px ;
+    border-radius:2px ;
+    padding: 2px
+}
+#takeOff {
+    position : relative ;
+    top : 10px ;
+    left : 2px ;
+}
+.inline {
+    display: inline-block;
+}
+.search {
+    background-color: rgb(35, 203, 187);
+    border: 0px;
+    width: 200px;
+    height:30px;
+    color: white ;  
+    margin-left: 50px;
+}
+.my {
+    display: inline-block;
+}
+#up {
+    position : relative;
+    top : 10px ;
+}
+#down {
+    position : relative ;
+    top : 10px ;
+}
+
+#dateI {
+    position : relative ;
+    top : 8px ;
+}
+#form {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.margin {
+    margin: 12px ;
+}
