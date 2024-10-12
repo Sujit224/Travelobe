@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <style>
+
+        #logo {
+
+            position: relative;
+            top:10px;
+            left:-290px ;
+
+        }
+        .left {
+            display: inline-block;
+            width: 60vw;
+            height:100vh;
+            text-align: center;
+            
+        }
+
+        content {
+            font-family: "Afacad Flux", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:"slnt" 0;
+        }
+
+        .lcont{
+            position: relative;
+            top: 70px;
+        }
+
+        .heading {
+            font-size: 27px;
+            margin-top: 40px;
+            font-family: "Afacad Flux", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:"slnt" 0;
+        }
+
+        .input {
+            margin: 8px;
+            height: 30px;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px;
+            background-color: rgb(208, 237, 223);
+        }
+
+        #submit {
+            
+            margin:15px;
+            width: 280px;
+            height: 30px;
+            background-color: rgb(22, 197, 174);
+            border:0px;
+            border-radius: 20px;
+            color : rgb(255, 255, 255) ;
+            transition-property: all;
+            transition-duration: 0.1s;
+            transition-timing-function: linear;
+        }
+        #submit:hover {
+            position:relative;
+            top: -5px ;
+            background-color: rgb(4, 180, 154);
+            width: 290px;
+            height: 35px;
+        }
+
+        .right {
+            justify-content: center;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            position:absolute;
+            
+            /* display: inline-block; */
+            width: 38vw ;
+            height: 100vh;
+            background-color: rgb(22, 197, 174);
+            color:white;
+        }
+        .rtext {
+            text-align: center;
+        }
+
+        .head {
+            font-size: 50px;
+            font-weight: 600;
+            font-family: "Afacad Flux", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:"slnt" 0;
+        }
+
+        .text {
+            
+            position: relative;
+            width: 500px;
+            font-size: 20px;
+        }
+
+        .login {
+            width: 180px;
+            height: 30px;
+            border-radius: 20px;
+            border: 0px;
+            color:rgb(22, 197, 174)
+        }
+
+        .login:hover {
+            font-size: 18px;
+            width: 190px;
+            height: 40px;
+        }
+
+        #glogo {
+            position:relative;
+            top:9px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="left">
+        <div >
+        <img src="Screenshot 2024-10-11 122125.png" alt="Logo" width="150px" id="logo">
+        </div>
+
+        <div class="lcont">
+
+
+        <div class="heading"> <h1>Login to your account</h1></div>
+        <div class="content">Login using social networks</div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="f" width="30px"> <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="g" width="50px" id="glogo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLgDGwPU32NpQ0eGNuVa9_rWS5UHDOAejQ&s" alt="i" width="40px"></div>
+
+        <p>or</p>
+    
+
+    <form action="">
+
+        <div>
+        <input type="text" id="name" placeholder="  Username or Email" class="input">
+        </div>
+        
+        <div>
+        <input type="password" id="pass1" placeholder="  Password" class="input">
+        </div>
+
+        <div>
+        <input type="submit" value="Login" id="submit">
+        </div>
+
+    </form>
+    </div>
+
+    </div>
+    <div class="right">
+
+        <div class="rtext">
+
+            <p class="head">New here?</p>
+
+            <p class="text">Login with your account</p>
+
+        </div>
+        <div>
+        <input type="submit" value="Sign Up" class="login">
+        </div>
+        
+    </div>
+</body>
+</html>
