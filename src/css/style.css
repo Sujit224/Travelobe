@@ -177,6 +177,7 @@ body .hero #scrolling .scrolling-images:hover {
 body .hero .svg-divider{
     position: absolute;
     width: 100%;
+    pointer-events: none;
     aspect-ratio: 12;
     min-height: 80px;
     left: 0;
