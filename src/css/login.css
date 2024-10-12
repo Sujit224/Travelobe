@@ -14,7 +14,8 @@ body {
 }
 
 .login-background {
-    background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); 
+    background-image: url(../assets/background.jpg);
+    /* background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");  */
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -107,6 +108,6 @@ h2 {
 }
 
 .signup-text a {
-    color: #ff7f50;
+    /* color: blue; */
     text-decoration: none;
 }
