@@ -87,7 +87,7 @@ h2 {
 .login-btn {
     width: 100%;
     padding: 10px;
-    background-color: #ff7f50;
+    background-color: #4ECCA3;
     color: white;
     border: none;
     border-radius: 5px;
@@ -95,9 +95,13 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.login-forgot{
+    text-decoration: none;
+    color: #4ECCA3;
+}
 
 .login-btn:hover {
-    background-color: #ff5733;
+    background-color: #4ECCA3;
 }
 
 .signup-text {
@@ -107,6 +111,6 @@ h2 {
 }
 
 .signup-text a {
-    color: #ff7f50;
+    color: #4ECCA3;
     text-decoration: none;
 }
