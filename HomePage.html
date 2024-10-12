@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp title</title>
+    <style>
+        #home{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-style: inherit;
+            position: relative;
+            left:40%;
+        }
+
+        body{
+            /* background-image: url(https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D); */
+            background-repeat: no-repeat;
+            background-position:center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #Logo{
+            position: relative;
+            left: -10px;
+            top: 0px;
+
+        }
+        #navlink{
+            clear: right;
+        }
+        .color {
+            font-size: 14px;
+            height: 28px ;
+            width: 190px ;
+            background-color: rgb(201, 239, 235);
+            border: 0px ;
+            border-radius:2px ;
+            padding: 2px
+        }
+        #takeOff {
+            position : relative ;
+            top : 10px ;
+            left : 2px ;
+        }
+        .inline {
+            display: inline-block;
+        }
+        .search {
+            background-color: rgb(35, 203, 187);
+            border: 0px;
+            width: 200px;
+            height:30px;
+            color: white ;  
+            margin-left: 50px;
+        }
+        .my {
+            display: inline-block;
+        }
+        #up {
+            position : relative;
+            top : 10px ;
+        }
+        #down {
+            position : relative ;
+            top : 10px ;
+        }
+        
+        #dateI {
+            position : relative ;
+            top : 8px ;
+        }
+        #form {
+            margin-left: 50px;
+        }
+        .margin {
+            margin: 12px ;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="Logo">
+        <img src="https://marketplace.canva.com/EAEaWgugqtE/2/0/1600w/canva-travel-app-or-website-logo-0ow-Kjlwzd8.jpg" alt="Logo" width="250px" id="up">
+    </div>
+    
+        <nav>
+        <div id="navlink">
+            <a id="home" href="">Home</a>
+            <a id="destination" href="">Destination</a>
+            <a id="'Contact us" href="">Contact Us</a>
+            <a id="blog" href="">Blog</a>
+            <a id="signup" href="">Sign Up</a>
+        </div>
+        <div class="nav_button">
+            <button id="log_in">Log In</button> 
+        </div>
+        </nav>
+    
+</header>
+<aside id="sm_links">
+    <a href=""><img src="" alt="twitter"></a>
+    <a href=""><img src="" alt="instagram"></a>
+    <a href=""><img src="" alt="youtube"></a>
+    <a href=""><img src="" alt="facebook"></a>
+    <a href=""><img src="" alt="github"></a>
+</aside>
+<h1 id="white">Say yes</h1>
+<h1 id="blue">TO YOUR VACATION</h1>
+<p id="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et facilis expedita, modi impedit repudiandae saepe totam deserunt beatae omnis?</p>
+<button id="find_more">FIND OUT MORE</button>
+<div id="scrolling">
+    <img src="" alt="img1">
+    <img src="" alt="img2">
+    <img src="" alt="img3">
+    <img src="" alt="img4">
+</div>
+<section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="" id="form">
+        <div id="tdetails" class="inline">
+            <div class="from my margin">
+            <img src="flight.png" alt="departure" width="38px" id="takeOff">
+            <label for="from">From:</label>
+            <input list="from" name="from" id="from1" class="color">
+            <datalist id="from">
+                <option value="Hyderabad">
+                <option value="Lucknow">
+                <option value="Bangalore">
+                <option value="Gujarat">
+                <option value="Haryana">
+            </datalist>
+            </div>
+            <div class="to my margin">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-aircraft-landing-icon-download-in-svg-png-gif-file-formats--airplane-airport-flight-phase-travel-pack-holidays-icons-1609622.png" width="32px" alt="arrival" id="down">
+            <label for="to">To:</label>
+            <input list="to" name="to" id="to1" class="color">
+            <datalist id="to">
+                <option value="Hyderabad">
+                <option value="Lucknow">
+                <option value="Bangalore">
+                <option value="Gujarat">
+                <option value="Haryana">
+            </datalist>
+            </div>
+            <div class="date my margin">
+                <img src="https://www.shutterstock.com/image-vector/spiral-calendar-vector-icon-style-260nw-344152304.jpg" width="20px" alt="date_icon" id="dateI">
+            <label for="date"> Date</label>
+            <input type="datetime-local" id="date" name="date" class="color">
+            </div>
+        </div>
+        <div id="search" class="inline">
+            <input type="submit" value="SEARCH" class="search">
+        </div>  
+    </form>
+</footer>
+</body>
+</html>
