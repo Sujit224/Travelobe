@@ -6,5 +6,5 @@
 - Ajay Chandra - Hero&Form Section (HTML) 
 - Siddharth - Signup Page (CSS) and Form Section (CSS)
 - Agastya - FeaturesSection (HTML+CSS)
-- Sri Charan - ExploreGrid (HTML 20%) and HTML of SignUp Page
+- Sri Charan - ExploreGrid (HTML,and  CSS20%) and HTML of SignUp Page
 - Satyam - ExploreGrid (CSS 80%) + Added Images
