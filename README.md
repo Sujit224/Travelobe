@@ -1,8 +1,8 @@
 # Travelobe
 
 ### Contributions
-- Sai Sujit - Hero Section and Header (CSS and JS) 
-- Chandraveer - Team&Footer Section (HTML+CSS) and Login Page (HTML+CSS)
+- Sai Sujit - Hero Section and Header (CSS and JS) and Bootstrap About Us
+- Chandraveer - Team&Footer Section (HTML+CSS) and Login Page (HTML+CSS) and Bootstrap Contact Us
 - Ajay Chandra - Hero&Form Section (HTML) 
 - Siddharth - Signup Page (CSS) and Form Section (CSS)
 - Agastya - FeaturesSection (HTML+CSS)
