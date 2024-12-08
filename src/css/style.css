@@ -23,6 +23,10 @@ body .header{
     position: sticky;
 }
 
+body.dark-theme, body.dark-theme .header {
+    background-color: #000;
+}
+
 body .header .nav-links {
     display: flex;
     align-items: center;
@@ -41,8 +45,20 @@ body .header .nav-links .nav-link{
     transition: all 0.4s ease-in-out;
 }
 
+body.dark-theme #Logo {
+    filter: invert(1);
+}
+
+body.dark-theme .header .nav-links .nav-link{
+    color: white;
+}
+
 body .header .nav-links .nav-link:hover{
     color: #32AD85;
+}
+
+body.dark-theme .header .nav-links .nav-link:hover{
+    filter: invert(1);
 }
 
 body .header .nav-links .nav-login{
@@ -51,6 +67,10 @@ body .header .nav-links .nav-login{
     background-color: #4ECCA3;
     color: white;
     text-decoration: none;
+}
+
+body.dark-theme .header .nav-links .nav-login {
+    filter: invert(1);
 }
 
 body .header .hamburger-menu {
@@ -75,7 +95,15 @@ body .header .hamburger-menu .bar {
     transition: all 0.3s ease;
 }
 
+body.dark-theme .header .hamburger-menu .bar{
+    background-color: white;
+}
+
 body .header.active .hamburger-menu .bar{
+    background-color: #32AD85;
+}
+
+body.dark-theme .header.active .hamburger-menu .bar{
     background-color: #32AD85;
 }
 
@@ -124,10 +152,16 @@ body .hero .hero-content .white{
     left: 20px;
     line-height: 0.1;
 }
+
+
+
 body .hero .hero-content .blue{
     color: #4ECCA3;
     font-family: Jost,sans-serif;
     font-size: 70px;
+}
+body.dark-theme .hero .hero-content .blue {
+    filter: invert(1);
 }
 body .hero .hero-content .des{
     color: white;
@@ -149,6 +183,10 @@ body .hero .hero-content #find_more:hover {
     background-color: #4ECCA3;
 }
 
+body.dark-theme .hero .hero-content #find_more:hover {
+    filter: invert(1);
+}
+
 body .hero #scrolling{
 /*    position: absolute;*/
     display: flex;
@@ -168,10 +206,17 @@ body .hero #scrolling .scrolling-images {
     transition: all 0.5s ease;
     border-radius: 16px;
 }
+body.dark-theme .hero #scrolling .scrolling-images {
+    border-color: #000;
+}
 
 body .hero #scrolling .scrolling-images:hover {
     transform: scale(0.9);
     border: 4px solid white;
+}
+
+body.dark-theme .hero #scrolling .scrolling-images:hover {
+    border-color: #000;
 }
 
 body .hero .svg-divider{
@@ -187,6 +232,9 @@ body .hero .svg-divider{
     background-repeat: no-repeat;
     background-position: bottom;
     filter: invert(1);
+}
+body.dark-theme .hero .svg-divider {
+    filter: none;
 }
 
 footer{
@@ -341,4 +389,13 @@ footer{
         transform: scale(1);
         border: 2px solid white;
     }
+    body.dark-theme .hero #scrolling .scrolling-images {
+        border-color: #000;
+    }
+}
+
+
+body.dark-theme .ChangeThemeIcon {
+    content: url(https://www.svgrepo.com/show/526333/sun-2.svg);
+    filter: invert(1);
 }

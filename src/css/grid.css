@@ -12,6 +12,9 @@
     font-family: Montserrat;
     color: #222;
 }
+body.dark-theme .state-section h1 {
+    color: #DDD;
+}
 .state-grid{
     column-count: 3;
     column-gap: 30px; 
