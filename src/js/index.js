@@ -26,3 +26,19 @@ const redric = () => {
 	Dateev = Dateev.split('-');
 	window.location.href = base_url+Frommv+"/"+Toov+"/"+Dateev[0].slice(2,4)+Dateev[1]+Dateev[2]+"/";
 }
+
+
+let modeBtn = document.getElementById("mode")
+let currMode = "light"
+
+modeBtn.addEventListener("click", ()=>{
+    if(currMode === "light"){
+        currMode ="dark"
+        document.querySelector("body").style.backgroundColor="black"
+    }
+    else {
+        currMode="light"
+        document.querySelector("body").style.backgroundColor="white"
+    }
+    console.log(currMode)
+})
