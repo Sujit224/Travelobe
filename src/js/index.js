@@ -94,3 +94,16 @@ state[5].addEventListener('mouseout',function() {
 })
 
 
+names=["Lucknow","Delhi","Kolkata","Jaipur","Ahmedabad","Hyderabad","Pune","Chennai","Bengaluru"]
+codes=["LKO","DEL","CCU","JAI","AMD","HYD","PNQ","MAA","BLR"]
+
+for (let i = 0; i < names.length; i++) {
+	elem = document.createElement("option");
+	elem.setAttribute("value", `${codes[i]}`);
+	elem.innerHTML = `${names[i]} (${codes[i]})`;
+	Fromm.appendChild(elem);
+	elem = document.createElement("option");
+	elem.setAttribute("value", `${codes[i]}`);
+	elem.innerHTML = `${names[i]} (${codes[i]})`;
+	Too.appendChild(elem);
+}
