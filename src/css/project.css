@@ -7,11 +7,14 @@
 }
 
 .features-section h2 {
-    text-align: center;
+text-align: center;
     color: #333;
     margin-bottom: 40px;
     font-family: Montserrat;
     font-size: 50px;
+}
+body.dark-theme .features-section h2 {
+    color: #EEE;
 }
 
 .left {
@@ -63,6 +66,14 @@
     font-family: Jost;
     font-weight: 500;
     color: antiquewhite;
+}
+
+body.dark-theme .right p, body.dark-theme .left p {
+    color: #CCC;
+}
+
+body.dark-theme .right, body.dark-theme .left {
+    background-color: #333;
 }
 
 .description {

@@ -6,6 +6,9 @@
     position: relative;
     left:40%;
 }
+body.dark-theme #form {
+    filter: invert(1);
+}
 .color {
     font-size: 14px;
     height: 28px ;

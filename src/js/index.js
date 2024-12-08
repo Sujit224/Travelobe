@@ -31,67 +31,18 @@ const state = document.getElementsByClassName("state-box") ;
 const content = document.getElementsByClassName("State-cont") ;
 const green = document.getElementsByClassName("state-title") ;
 
-state[0].addEventListener('mouseover',function() {
-	green[0].classList.add("change-height") ;
-	content[0].classList.add("display") ;
-})
-state[0].addEventListener('mouseout',function() {
-	content[0].classList.add("State-cont") ;
-	content[0].classList.remove("display") ;
-	green[0].classList.remove("change-height") ;
-})
+for (let i = 0; i < 6; i++) {
+	state[i].addEventListener('mouseover',function() {
+		green[i].classList.add("change-height") ;
+		content[i].classList.add("display") ;
+	})
+	state[i].addEventListener('mouseout',function() {
+		content[i].classList.add("State-cont") ;
+		content[i].classList.remove("display") ;
+		green[i].classList.remove("change-height") ;
+	})
+}
 
-state[1].addEventListener('mouseover',function() {
-	green[1].classList.add("change-height") ;
-	content[1].classList.add("display") ;
-})
-state[1].addEventListener('mouseout',function() {
-	content[1].classList.add("State-cont") ;
-	content[1].classList.remove("display") ;
-	green[1].classList.remove("change-height") ;
-})
-
-state[2].addEventListener('mouseover',function() {
-	green[2].classList.add("change-height") ;
-	content[2].classList.add("display") ;
-})
-state[2].addEventListener('mouseout',function() {
-	content[2].classList.add("State-cont") ;
-	content[2].classList.remove("display") ;
-	green[2].classList.remove("change-height") ;
-})
-
-state[3].addEventListener('mouseover',function() {
-	green[3].classList.add("change-height") ;
-	content[3].classList.add("display") ;
-})
-state[3].addEventListener('mouseout',function() {
-	content[3].classList.add("State-cont") ;
-	content[3].classList.remove("display") ;
-	green[3].classList.remove("change-height") ;
-})
-
-state[4].addEventListener('mouseover',function() {
-	green[4].classList.add("change-height") ;
-	content[4].classList.add("display") ;
-})
-state[4].addEventListener('mouseout',function() {
-	content[4].classList.add("State-cont") ;
-	content[4].classList.remove("display") ;
-	green[4].classList.remove("change-height") ;
-})
-
-
-
-state[5].addEventListener('mouseover',function() {
-	green[5].classList.add("change-height") ;
-	content[5].classList.add("display") ;
-})
-state[5].addEventListener('mouseout',function() {
-	content[5].classList.add("State-cont") ;
-	content[5].classList.remove("display") ;
-	green[5].classList.remove("change-height") ;
-})
 
 
 names=["Lucknow","Delhi","Kolkata","Jaipur","Ahmedabad","Hyderabad","Pune","Chennai","Bengaluru"]
@@ -106,4 +57,10 @@ for (let i = 0; i < names.length; i++) {
 	elem.setAttribute("value", `${codes[i]}`);
 	elem.innerHTML = `${names[i]} (${codes[i]})`;
 	Too.appendChild(elem);
+}
+
+
+
+function ToggleTheme(){
+	document.body.classList.toggle("dark-theme");
 }
