@@ -12,3 +12,17 @@ function herobg(x) {
 function ToggleHeader(x) {
 	header.classList.toggle("active");
 }
+
+base_url="https://www.skyscanner.co.in/transport/flights/";
+
+Fromm= document.getElementById("from");
+Too= document.getElementById("to");
+Datee= document.getElementById("date");
+
+const redric = () => {
+	Frommv = Fromm.value;
+	Toov = Too.value;
+	Dateev = Datee.value;
+	Dateev = Dateev.split('-');
+	window.location.href = base_url+Frommv+"/"+Toov+"/"+Dateev[2]+Dateev[1]+Dateev[0].slice(2,4)+"/";
+}

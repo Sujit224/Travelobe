@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,12 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/grid.css">
     <link rel="stylesheet" href="src/css/form.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
     <header id="header" class="header">
         <a href=""><img src="src/assets/TravelobeLogo.png" id="Logo" alt="Logo" height="64px"></a>
@@ -21,7 +25,7 @@
             <a class="nav-link" href="#contact-us">Contact Us</a>
             <a class="nav-link" href="">About Us</a>
             <a class="nav-link" href="SignUp.html">Sign Up</a>
-            <a class="nav-login" href="login.html">Log In</a> 
+            <a class="nav-login" href="login.html">Log In</a>
         </nav>
         <div class="hamburger-menu" onclick="ToggleHeader()">
             <span class="bar bar1"></span>
@@ -40,14 +44,23 @@
         <div class="hero-content">
             <h1 class="white">Explore</h1>
             <h1 class="blue">Everywhere</h1>
-            <p class="des"> Keep Moving, Hearts Wide Open, Through The Cities, Seas And Skies Unbroken. Footsteps Falling Where The Rivers Run, The Journey's Just Begun</p>
+            <p class="des"> Keep Moving, Hearts Wide Open, Through The Cities, Seas And Skies Unbroken. Footsteps
+                Falling Where The Rivers Run, The Journey's Just Begun</p>
             <a href="#features-section"><button id="find_more">FIND OUT MORE</button></a>
         </div>
         <div id="scrolling">
-            <div class="scrolling-images" style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/romantic-fall-scenery-countryside-road-in-foggy-autumn-morning-free-image.jpg?w=200&quality=100)" onclick="herobg(this)"></div>
-            <div class="scrolling-images" style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-a-river-in-the-middle-of-the-forest-free-image.jpeg?w=200&quality=100)" onclick="herobg(this)"></div>
-            <div class="scrolling-images" style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-trees-of-yellow-leaves-free-image.jpeg?w=200&quality=100)" onclick="herobg(this)"></div>
-            <div class="scrolling-images" style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/camping-on-top-of-the-mountain-during-sunset-free-photo.jpg?w=200&quality=100)" onclick="herobg(this)"></div>
+            <div class="scrolling-images"
+                style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/romantic-fall-scenery-countryside-road-in-foggy-autumn-morning-free-image.jpg?w=200&quality=100)"
+                onclick="herobg(this)"></div>
+            <div class="scrolling-images"
+                style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-a-river-in-the-middle-of-the-forest-free-image.jpeg?w=200&quality=100)"
+                onclick="herobg(this)"></div>
+            <div class="scrolling-images"
+                style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-trees-of-yellow-leaves-free-image.jpeg?w=200&quality=100)"
+                onclick="herobg(this)"></div>
+            <div class="scrolling-images"
+                style="background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/camping-on-top-of-the-mountain-during-sunset-free-photo.jpg?w=200&quality=100)"
+                onclick="herobg(this)"></div>
         </div>
         <div class="svg-divider"></div>
     </section>
@@ -55,55 +68,92 @@
         <form action="" id="form">
             <div id="tdetails" class="inline">
                 <div class="from my margin">
-                <img src="https://crazyflightsdeals.com/wp-content/uploads/2024/05/Flight-Booking-2-e1715246458325-600x380.png" alt="departure" width="38px" id="takeOff">
-                <label for="from">From:</label>
-                <input list="from" name="from" id="from1" class="color" required>
-                <datalist id="from">
-                    <option value="Hyderabad">
-                    <option value="Lucknow">
-                    <option value="Bangalore">
-                    <option value="Gujarat">
-                    <option value="Haryana">
-                </datalist>
+                    <img src="https://crazyflightsdeals.com/wp-content/uploads/2024/05/Flight-Booking-2-e1715246458325-600x380.png"
+                        alt="departure" width="38px" id="takeOff">
+                    <label for="from">From:</label>
+                    <!-- <input list="from" name="from" id="from1" class="color" required> -->
+                    <select id="from" name="from" id="from1" class="color" required>
+                        <option value="IN">IN</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                    </select>
                 </div>
                 <div class="to my margin">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-aircraft-landing-icon-download-in-svg-png-gif-file-formats--airplane-airport-flight-phase-travel-pack-holidays-icons-1609622.png" width="32px" alt="arrival" id="down">
-                <label for="to">To:</label>
-                <input list="to" name="to" id="to1" class="color" required>
-                <datalist id="to">
-                    <option value="Hyderabad">
-                    <option value="Lucknow">
-                    <option value="Bangalore">
-                    <option value="Gujarat">
-                    <option value="Haryana">
-                </datalist>
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-aircraft-landing-icon-download-in-svg-png-gif-file-formats--airplane-airport-flight-phase-travel-pack-holidays-icons-1609622.png"
+                        width="32px" alt="arrival" id="down">
+                    <label for="to">To:</label>
+                    <select id="to" name="to" id="from1" class="color" required>
+                        <option value="ZA">ZA</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                    </select>
                 </div>
                 <div class="date my margin">
-                    <img src="https://www.shutterstock.com/image-vector/spiral-calendar-vector-icon-style-260nw-344152304.jpg" width="20px" alt="date_icon" id="dateI">
-                <label for="date"> Date</label>
-                <input type="datetime-local" id="date" name="date" class="color">
+                    <img src="https://www.shutterstock.com/image-vector/spiral-calendar-vector-icon-style-260nw-344152304.jpg"
+                        width="20px" alt="date_icon" id="dateI">
+                    <label for="date"> Date</label>
+                    <input type="date" id="date" name="date" class="color" value="2024-12-23">
                 </div>
             </div>
             <div id="search" class="inline">
-                <input type="submit" value="SEARCH" class="search">
-            </div>  
+                <input type="button" value="SEARCH" class="search" onclick="redric()">
+            </div>
         </form>
     </section>
     <section class="state-section">
         <h1>Explore More</h1>
         <div class="state-grid">
-            <div class="state-items" style="background-image:url(https://images.unsplash.com/photo-1564507592333-c60657eea523?fm=jpg&q=60&w=1000);"></div>
-            <div class="state-title"> Uttar Pradesh </div>
-            <div class="state-items_bottom" style="background-image:url(https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/06/ca25e29e3a37e68f2a41c9116ce2f8eb_1000x1000.jpg);"></div>
-            <div class="state-title"> Bihar </div>
-            <div class="state-items" style="background-image:url(https://assets-news.housing.com/news/wp-content/uploads/2022/08/18071344/Andhra-Pradesh-5.png);"></div>
-            <div class="state-title">Andhra Pradesh</div>
-            <div class="state-items_bottom" style="background-image:url(https://facts.net/wp-content/uploads/2023/09/18-enigmatic-facts-about-hampi-1694707599.jpeg);"></div>
-            <div class="state-title">Karnataka</div>
-            <div class="state-items" style="background-image:url(https://www.tourmyindia.com/states/rajasthan/image/best-places-to-visit-rajasthan.webp);"></div>
-            <div class="state-title">Rajasthan</div>
-            <div class="state-items_bottom" style="background-image:url(https://dailymela.com/wp-content/uploads/2024/05/Charminar-Hyderabad-1024x536.jpg);"></div>
-            <div class="state-title">Telangana</div>
+            <div class="state-box">
+
+                <div class="state-items"
+                    style="background-image:url(https://images.unsplash.com/photo-1564507592333-c60657eea523?fm=jpg&q=60&w=1000);">
+                </div>
+                <div class="state-title"> Uttar Pradesh </div>
+            </div>
+
+            <div class="state-box">
+                <div class="state-items"
+                    style="background-image:url(https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/06/ca25e29e3a37e68f2a41c9116ce2f8eb_1000x1000.jpg);">
+                </div>
+                <div class="state-title"> Bihar </div>
+            </div>
+
+            <div class="state-box">
+
+                <div class="state-items"
+                    style="background-image:url(https://assets-news.housing.com/news/wp-content/uploads/2022/08/18071344/Andhra-Pradesh-5.png);">
+                </div>
+                <div class="state-title">Andhra Pradesh</div>
+            </div>
+
+            <div class="state-box">
+                <div class="state-items"
+                    style="background-image:url(https://facts.net/wp-content/uploads/2023/09/18-enigmatic-facts-about-hampi-1694707599.jpeg);">
+                </div>
+                <div class="state-title">Karnataka</div>
+            </div>
+
+            <div class="state-box">
+
+                <div class="state-items"
+                    style="background-image:url(https://www.tourmyindia.com/states/rajasthan/image/best-places-to-visit-rajasthan.webp);">
+                </div>
+                <div class="state-title">Rajasthan</div>
+            </div>
+
+            <div class="state-box">
+                <div class="state-items"
+                    style="background-image:url(https://www.trawell.in/admin/images/upload/249844992Hyderabad_Main.jpg);">
+                </div>
+                <div class="state-title">Telangana</div>
+            </div>
+
         </div>
     </section>
     <section class="features-section" id="features-section">
@@ -111,7 +161,12 @@
         <div class="left">
             <div class="description">
                 <h3>1. Personalized Itineraries</h3>
-                <p>At Travelobe, we understand that every traveler is unique. That's why we offer personalized itineraries that cater to your individual preferences, whether you're seeking adventure, relaxation, or cultural experiences. Our advanced algorithms and expert travel consultants collaborate to craft a journey that aligns with your interests and travel style. Whether you're planning a solo backpacking trip or a family vacation, we ensure that each day is filled with memorable experiences that suit you best. Say goodbye to generic trips and hello to truly custom adventures!</p>
+                <p>At Travelobe, we understand that every traveler is unique. That's why we offer personalized
+                    itineraries that cater to your individual preferences, whether you're seeking adventure, relaxation,
+                    or cultural experiences. Our advanced algorithms and expert travel consultants collaborate to craft
+                    a journey that aligns with your interests and travel style. Whether you're planning a solo
+                    backpacking trip or a family vacation, we ensure that each day is filled with memorable experiences
+                    that suit you best. Say goodbye to generic trips and hello to truly custom adventures!</p>
             </div>
             <div class="photo">
                 <img src="src/assets/1.jpg" alt="Personalized Itineraries">
@@ -120,7 +175,12 @@
         <div class="right">
             <div class="description">
                 <h3>2. Seamless Booking</h3>
-                <p>Travelobe makes booking your next vacation a breeze. Our platform integrates flights, hotels, tours, and transportation into a single, seamless booking process. You no longer have to juggle multiple tabs or sites to coordinate your trip. With a user-friendly interface, you can complete your bookings in just a few clicks, ensuring that your entire trip is planned from start to finish with minimal hassle. We also offer multiple payment options, including international currencies, making it easier for travelers around the world to book with confidence. Plan, book, and relax!</p>
+                <p>Travelobe makes booking your next vacation a breeze. Our platform integrates flights, hotels, tours,
+                    and transportation into a single, seamless booking process. You no longer have to juggle multiple
+                    tabs or sites to coordinate your trip. With a user-friendly interface, you can complete your
+                    bookings in just a few clicks, ensuring that your entire trip is planned from start to finish with
+                    minimal hassle. We also offer multiple payment options, including international currencies, making
+                    it easier for travelers around the world to book with confidence. Plan, book, and relax!</p>
             </div>
             <div class="photo">
                 <img src="src/assets/2.jpg" alt="Seamless Booking">
@@ -129,7 +189,12 @@
         <div class="left">
             <div class="description">
                 <h3>3. Local Guides</h3>
-                <p>With Travelobe, you’ll experience destinations like a local. We connect you with knowledgeable, certified local guides who are passionate about sharing the hidden gems and authentic culture of their cities and towns. Whether you’re interested in history, food, art, or adventure, our local guides will tailor the experience to your interests. They know the best spots to eat, visit, and explore, giving you insights that you won’t find in guidebooks. Plus, your tours help support local economies, ensuring that your travels benefit the communities you visit.</p>
+                <p>With Travelobe, you’ll experience destinations like a local. We connect you with knowledgeable,
+                    certified local guides who are passionate about sharing the hidden gems and authentic culture of
+                    their cities and towns. Whether you’re interested in history, food, art, or adventure, our local
+                    guides will tailor the experience to your interests. They know the best spots to eat, visit, and
+                    explore, giving you insights that you won’t find in guidebooks. Plus, your tours help support local
+                    economies, ensuring that your travels benefit the communities you visit.</p>
             </div>
             <div class="photo">
                 <img src="src/assets/3.jpg" alt="Local Guides">
@@ -138,7 +203,12 @@
         <div class="right">
             <div class="description">
                 <h3>4. 24/7 Customer Support</h3>
-                <p>Travel doesn’t always go as planned, which is why Travelobe provides 24/7 customer support to assist you wherever and whenever you need. Whether you're dealing with flight delays, lost luggage, or unexpected changes to your itinerary, our support team is just a call or chat away. With dedicated agents who speak multiple languages and have in-depth knowledge of travel logistics, we ensure that you never feel stranded or stressed. From minor inquiries to urgent issues, we’re here to resolve problems quickly so you can enjoy your trip with peace of mind.</p>
+                <p>Travel doesn’t always go as planned, which is why Travelobe provides 24/7 customer support to assist
+                    you wherever and whenever you need. Whether you're dealing with flight delays, lost luggage, or
+                    unexpected changes to your itinerary, our support team is just a call or chat away. With dedicated
+                    agents who speak multiple languages and have in-depth knowledge of travel logistics, we ensure that
+                    you never feel stranded or stressed. From minor inquiries to urgent issues, we’re here to resolve
+                    problems quickly so you can enjoy your trip with peace of mind.</p>
             </div>
             <div class="photo">
                 <img src="src/assets/4.jpg" alt="24/7 Customer Support">
@@ -147,7 +217,12 @@
         <div class="left">
             <div class="description">
                 <h3>5. Travel Insurance</h3>
-                <p>Safety and security are top priorities when you travel, and with Travelobe's comprehensive travel insurance, you can explore the world without worry. Our insurance covers a wide range of unforeseen events, from medical emergencies and trip cancellations to lost baggage and natural disasters. Whether you're traveling domestically or internationally, our flexible insurance plans ensure that you're protected against the unexpected. So no matter where your journey takes you, you can rest easy knowing you're covered for any bumps along the way.</p>
+                <p>Safety and security are top priorities when you travel, and with Travelobe's comprehensive travel
+                    insurance, you can explore the world without worry. Our insurance covers a wide range of unforeseen
+                    events, from medical emergencies and trip cancellations to lost baggage and natural disasters.
+                    Whether you're traveling domestically or internationally, our flexible insurance plans ensure that
+                    you're protected against the unexpected. So no matter where your journey takes you, you can rest
+                    easy knowing you're covered for any bumps along the way.</p>
             </div>
             <div class="photo">
                 <img src="src/assets/5.jpg" alt="Travel Insurance">
@@ -156,7 +231,12 @@
         <div class="right">
             <div class="description">
                 <h3>6. User-Friendly Mobile App</h3>
-                <p>Stay connected to your travel plans with Travelobe’s easy-to-use mobile app. Designed for travelers on the go, our app allows you to manage your bookings, track your flights, and access your itinerary all in one place. It features real-time updates, notifications, and local recommendations tailored to your destination. You can even store e-tickets and boarding passes, making your travel experience paperless and hassle-free. Whether you’re on a flight or exploring a new city, Travelobe’s app ensures you have everything you need right at your fingertips.</p>
+                <p>Stay connected to your travel plans with Travelobe’s easy-to-use mobile app. Designed for travelers
+                    on the go, our app allows you to manage your bookings, track your flights, and access your itinerary
+                    all in one place. It features real-time updates, notifications, and local recommendations tailored
+                    to your destination. You can even store e-tickets and boarding passes, making your travel experience
+                    paperless and hassle-free. Whether you’re on a flight or exploring a new city, Travelobe’s app
+                    ensures you have everything you need right at your fingertips.</p>
             </div>
             <div class="photo">
                 <img src="src/assets/6.jpg" alt="Mobile App">
@@ -165,7 +245,12 @@
         <div class="left">
             <div class="description">
                 <h3>7. Exclusive Discounts</h3>
-                <p>Travelobe partners with top travel service providers to bring you exclusive deals and discounts. As a Travelobe user, you’ll gain access to limited-time offers on flights, hotels, car rentals, and vacation packages. Our partnerships allow us to provide discounts you won’t find anywhere else, ensuring that you get the best value for your money. Whether you're booking a luxury escape or a budget-friendly trip, Travelobe’s discounts help you stretch your travel budget further, giving you more opportunities to explore the world without breaking the bank.</p>
+                <p>Travelobe partners with top travel service providers to bring you exclusive deals and discounts. As a
+                    Travelobe user, you’ll gain access to limited-time offers on flights, hotels, car rentals, and
+                    vacation packages. Our partnerships allow us to provide discounts you won’t find anywhere else,
+                    ensuring that you get the best value for your money. Whether you're booking a luxury escape or a
+                    budget-friendly trip, Travelobe’s discounts help you stretch your travel budget further, giving you
+                    more opportunities to explore the world without breaking the bank.</p>
             </div>
             <div class="photo">
                 <img src="src/assets/7.jpg" alt="Exclusive Discounts">
@@ -174,11 +259,13 @@
     </section>
     <footer>
         <h1><b>Company information</b></h1>
-        <h3 id="company-info"> A good plus of travelling is that often you get new skills without difficulty and without even noticing it. </h3> <br><br>
+        <h3 id="company-info"> A good plus of travelling is that often you get new skills without difficulty and without
+            even noticing it. </h3> <br><br>
         <h1 id="contact-us">Contacts</h1><br>
         <div class="footer-container">
-            <span class="footer-content"><i class="fa-solid fa-mobile-screen"></i>8105626006</span>  
-            <span class="footer-content"><i class="fa-solid fa-location-dot"></i>Saroj Boys Hostel, Sultapur Road, Ahmamau, Lucknow, Uttar Pradesh, 226002</span>
+            <span class="footer-content"><i class="fa-solid fa-mobile-screen"></i>8105626006</span>
+            <span class="footer-content"><i class="fa-solid fa-location-dot"></i>Saroj Boys Hostel, Sultapur Road,
+                Ahmamau, Lucknow, Uttar Pradesh, 226002</span>
             <span class="footer-content"><i class="fa-regular fa-clock"></i>Mon-Sat 8:00-18:00</span>
         </div>
         <div class="team-section">
@@ -221,7 +308,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="footer-link-container">
             <a href="#" class="footer-links"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
             <a href="#" class="footer-links"><i class="fa-brands fa-twitter"></i>Twitter</a>
@@ -230,13 +317,17 @@
             <a href="#" class="footer-links"><i class="fa-brands fa-youtube"></i>Youtube</a>
         </div>
         <br>
-        <div class = "footer-text-container">
+        <div class="footer-text-container">
             &copy; 2024 by The Travelobe.
             <br>
-            <i>All copyright, trademark, and other intellectual property rights in this site, are the property of travelobe</i>
+            <i>All copyright, trademark, and other intellectual property rights in this site, are the property of
+                travelobe</i>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="src/js/index.js"></script>
 </body>
+
 </html>
