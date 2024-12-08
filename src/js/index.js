@@ -24,5 +24,5 @@ const redric = () => {
 	Toov = Too.value;
 	Dateev = Datee.value;
 	Dateev = Dateev.split('-');
-	window.location.href = base_url+Frommv+"/"+Toov+"/"+Dateev[2]+Dateev[1]+Dateev[0].slice(2,4)+"/";
+	window.location.href = base_url+Frommv+"/"+Toov+"/"+Dateev[0].slice(2,4)+Dateev[1]+Dateev[2]+"/";
 }
