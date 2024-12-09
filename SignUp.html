@@ -37,13 +37,13 @@
         <div>or</div>
 
 
-        <form action="" onsubmit="data()">
+        <form action="" id="fom">
 
             <div>
-                <input type="text" id="name" placeholder="  Username" class="input">
+                <input type="text" id="name" placeholder="  Username" class="input" required>
             </div>
             <div>
-                <input type="text" id="email" placeholder="  Email" class="input">
+                <input type="email" id="email" placeholder="  Email" class="input" required>
             </div>
             <div>
                 <input type="tel" id="no" placeholder="  Mobile no" class="input">
@@ -57,9 +57,8 @@
             <input type="checkbox" id="terms">
             <label for="terms" class="black">I agree to the terms and conditions and follow all the rules and
                 regulations</label>
-            <div id="msg"></div>
             <div>
-                <input type="submit" value="Sign Up" id="submit">
+                <input type="submit" value="Sign Up" id="submit" onclick="authenticate()">
             </div>
 
         </form>
@@ -80,35 +79,7 @@
         </div>
 
     </div>
-    <script>
-         function data(){
-         let uname=document.querySelector("#name").value;
-        let email=document.querySelector("#email").value;
-        let mobile=document.querySelector("#no").value;
-        let pass1=document.querySelector("#pass1").value;
-        let pass2=document.querySelector("#pass2").value;
-        let msg=document.querySelector("#msg");
-        
-    
-
-        if(uname==""||email==""||mobile==""||pass1==""||pass2==""){
-            alert("All fields are mandatory");
-            return false;
-        }else{
-            true;
-        }
-        if(pass1!==pass2){
-            alert("Passsword not same");
-        }
-        if(pass1.length&&pass2.length<8 ){
-            alert(" Password Length insufficient");
-        }
-        rx = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/g
-        if(email.match(rx) == null){
-            alert("Invalid Email.")
-        }
-    }
-    </script>
+    <script src="val.js"></script>
 </body>
 
 </html>
